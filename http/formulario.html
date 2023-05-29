@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Formulario de validacion</title>
+    <meta name="keywords" content="" />
+    <meta name="descripcion" content="" />
+    <link rel='stylesheet' href='../css/styles_form.css' type='text/css' />
+</head>
+
+<body onload="document.registration.userid.focus();">
+    <header>
+        <nav>
+            <ul>
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="../http/buscar.html">Buscar</a></li>
+                <li><a href="../http/API.html">Contactanos</a></li>
+            </ul>
+        </nav>
+    </header>
+   
+    <form name='registration' onSubmit="return formValidacion();">
+        <h1>Formulario de Suscripcion</h1>
+        <ul>
+            <li><label for="userid">Usuario:</label></li>
+            <li><input type="text" id="userid" name="userid" size="12" /></li>
+            <li><label for="passid">Contraseña:</label></li>
+            <li><input type="password" id="passid" name="passid" size="12" /></li>
+            <li><label for="username">Nombre:</label></li>
+            <li><input type="text" id="username" name="username" size="50" /></li>
+            <li><label for="address">Direccion:</label></li>
+            <li><input type="text" id="address" name="address" size="50" /></li>
+            <li><label for="country">Pais:</label></li>
+            <li>
+                <select id="country" name="country">
+                    <option selected="" value="Default">(seleccione Pais)</option>
+                    <option value="AF">Australia</option>
+                    <option value="AF">Argentina</option>
+                    <option value="AL">Canada</option>
+                    <option value="DZ">India</option>
+                    <option value="AS">Russia</option>
+                    <option value="AD">USA</option>
+                </select>
+            </li>
+            <li><label for="zip">Codigo Postal:</label></li>
+            <li><input type="text" id="zip" name="zip" /></li>
+            <li><label for="email">Correo Electronico:</label></li>
+            <li><input type="text" id="email" name="email" size="50" /></li>
+            <li><label id="gender">Sexo:</label></li>
+            <li><input type="radio" id="msex" name="msex" value="Male" /><span>Masculino</span></li>
+            <li><input type="radio" id="fsex" name="fsex" value="Female" /><span>Femenino</span></li>
+            <li><label>Lenguage:</label></li>
+            <li><input type="checkbox" id="en" name="en" value="en" checked /><span>Ingles</span></li>
+            <li><input type="checkbox" id="nonen" name="nonen" value="noen" /><span>No Ingles</span></li>
+            <li><label for="desc">Acerca de:</label></li>
+            <li><textarea id="desc" name="desc"></textarea></li>
+            <li><input type="submit" name="submit" value="Enviar" /></li>
+        </ul>
+    </form>
+</body>
+<script src="../js/main2.js"></script>
+</html>

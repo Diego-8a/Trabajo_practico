@@ -1,0 +1,141 @@
+
+body {
+  background: #11998e;
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #38ef7d, #11998e);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #38ef7d, #11998e);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+  font-family: 'Montserrat', sans-serif;
+
+}
+
+header {
+  background-color: #1db954;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.3rem;
+}
+
+/* Estilos del encabezado */
+header {
+  background: #11998e;
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #38ef7d, #11998e);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #38ef7d, #11998e);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.user-info a {
+  color: rgb(221, 233, 224);
+  text-decoration: none;
+  margin-right: 1rem;
+}
+
+.user-info {
+  display: flex;
+  align-items: center;
+
+  
+
+}
+
+.user-info img {
+  border-radius: 30%;
+  margin-right: 0.5rem;
+  width: 30px;
+  height: 30px;
+}
+
+  
+
+
+form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+label {
+    font-size: 18px;
+    margin-right: 10px;
+}
+
+input[type="text"] {
+    font-size: 18px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+button[type="submit"] {
+    font-size: 18px;
+    padding: 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button[type="submit"]:hover {
+    background-color: #062749;
+}
+
+footer {
+  background-color: #333;
+  color: white;
+  padding: 1rem;
+  margin-top: 400px;
+  text-align: center;
+}
+
+footer p {
+  margin: 0px;
+}
+
+#container {
+  position: relative;
+  width: auto;
+  height: 300px;
+  overflow: hidden;
+}
+
+.image {
+  position: absolute;
+  top: 50px;
+  left: 550px;
+  opacity: 0;
+  transition: opacity 1.5s;
+  border-radius: 10px;
+}
+
+.image.active {
+  opacity: 1;
+}
